@@ -1,0 +1,130 @@
+@import "./base/variables";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins";
+  width: 100%;
+  height: 100vh;
+}
+
+p {
+  font-size: 15px;
+  font-weight: 200;
+  color: $grayish-blue;
+}
+
+.wrapper {
+  max-width: 1200px;
+  width: 80%;
+  margin: 0 auto;
+  padding-block: 6em;
+}
+
+header {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.wrapper header :nth-child(1) {
+  font-weight: 200;
+  color: $grayish-blue;
+}
+
+.wrapper header :nth-child(2) {
+  font-weight: 600;
+  color: $very-dark-blue;
+}
+
+.wrapper header p {
+  margin-top: 2em;
+  text-wrap: balance;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  margin-top: 4em;
+}
+
+main > div {
+  width: 400px;
+  max-width: 100%;
+}
+
+// each div content
+main {
+  div {
+    div {
+      border-radius: 5px;
+      padding: 2em;
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      position: relative;
+      height: 15rem;
+
+      p {
+        padding-top: 0.4rem;
+        max-width: 16rem;
+        font-weight: 200;
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+//.left-col,
+//right-col {
+//  display: flex;
+//  align-items: center;
+//}
+
+.mid-col {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+main h4 {
+  color: $very-dark-blue;
+}
+
+img {
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+}
+
+//border colors
+
+.left-col-content {
+  border-top: 4px solid $cyan;
+}
+
+.mid-col-top-content {
+  border-top: 4px solid $red;
+}
+
+.mid-col-bottom-content {
+  border-top: 4px solid $orange;
+}
+
+.right-col-content {
+  border-top: 4px solid $blue;
+}
+
+//desktop
+/*
+header {
+  width: 40%;
+}
+
+main > div {
+  width: 30%;
+}
+*/

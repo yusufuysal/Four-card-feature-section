@@ -18,13 +18,12 @@ p {
 
 .wrapper {
   max-width: 1200px;
+  width: 80%;
   margin: 0 auto;
-  padding-top: 6em;
-  height: 90%;
+  padding-block: 6em;
 }
 
 header {
-  width: 40%;
   margin: 0 auto;
   text-align: center;
 }
@@ -41,51 +40,41 @@ header {
 
 .wrapper header p {
   margin-top: 2em;
+  text-wrap: balance;
 }
 
 main {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 2em;
   margin-top: 4em;
-  justify-content: center;
 }
 
 main > div {
-  width: 30%;
+  width: 400px;
+  max-width: 100%;
 }
 
-main > div > div {
+main div div {
   border-radius: 5px;
-  padding-block: 3em;
+  padding: 2em;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   position: relative;
+  height: 15rem;
 }
-
-.left-col {
-  display: flex;
-  align-items: center;
+main div div p {
+  padding-top: 0.4rem;
+  max-width: 16rem;
+  font-weight: 200;
+  font-size: 15px;
 }
 
 .mid-col {
-  height: 100%;
   display: flex;
   flex-direction: column;
   gap: 2em;
-}
-
-.mid-col > div {
-  padding-top: 2em;
-  padding-left: 2em;
-}
-
-.right-col {
-  display: flex;
-  align-items: center;
-}
-
-.left-col-content,
-.right-col-content {
-  padding-left: 2em;
 }
 
 main h4 {
@@ -97,3 +86,31 @@ img {
   right: 30px;
   bottom: 30px;
 }
+
+.left-col-content {
+  border-top: 4px solid hsl(180, 62%, 55%);
+}
+
+.mid-col-top-content {
+  border-top: 4px solid hsl(0, 78%, 62%);
+}
+
+.mid-col-bottom-content {
+  border-top: 4px solid hsl(34, 97%, 64%);
+}
+
+.right-col-content {
+  border-top: 4px solid hsl(212, 86%, 64%);
+}
+
+/*
+header {
+  width: 40%;
+}
+
+main > div {
+  width: 30%;
+}
+*/
+
+/*# sourceMappingURL=main.css.map */
