@@ -14,7 +14,7 @@ body {
 p {
   font-size: 15px;
   font-weight: 200;
-  color: $grayish-blue;
+  color: $very-dark-blue;
 }
 
 .wrapper {
@@ -29,12 +29,12 @@ header {
   text-align: center;
 }
 
-header :nth-child(1) {
+header h1 {
   font-weight: 200;
-  color: $grayish-blue;
+  color: $very-dark-blue;
 }
 
-header :nth-child(2) {
+header h2 {
   font-weight: 600;
   color: $very-dark-blue;
 }
@@ -84,7 +84,7 @@ main {
   gap: 2em;
 }
 
-main h4 {
+main h3 {
   font-size: 20px;
   color: $very-dark-blue;
 }
@@ -113,17 +113,6 @@ img {
   border-top: 5px solid $blue;
 }
 
-//desktop
-/*
-header {
-  width: 40%;
-}
-
-main > div {
-  width: 30%;
-}
-*/
-
 @media (min-width: 1440px) {
   main {
     display: flex;
@@ -132,7 +121,6 @@ main > div {
     align-items: center;
     gap: 3em;
     margin-top: 4em;
-    color: red;
   }
 
   main {
@@ -143,13 +131,13 @@ main > div {
     }
   }
 
-  header :nth-child(1) {
+  header > h1 {
     font-size: 40px;
     font-weight: 200;
     color: $very-dark-blue;
   }
 
-  header :nth-child(2) {
+  header > h2 {
     font-size: 40px;
     font-weight: 600;
     color: $very-dark-blue;
