@@ -28,17 +28,17 @@ header {
   text-align: center;
 }
 
-.wrapper header :nth-child(1) {
+header :nth-child(1) {
   font-weight: 200;
   color: hsl(229, 6%, 66%);
 }
 
-.wrapper header :nth-child(2) {
+header :nth-child(2) {
   font-weight: 600;
   color: hsl(234, 12%, 34%);
 }
 
-.wrapper header p {
+header p {
   margin-top: 2em;
   text-wrap: balance;
 }
@@ -78,6 +78,7 @@ main div div p {
 }
 
 main h4 {
+  font-size: 20px;
   color: hsl(234, 12%, 34%);
 }
 
@@ -88,19 +89,19 @@ img {
 }
 
 .left-col-content {
-  border-top: 4px solid hsl(180, 62%, 55%);
+  border-top: 5px solid hsl(180, 62%, 55%);
 }
 
 .mid-col-top-content {
-  border-top: 4px solid hsl(0, 78%, 62%);
+  border-top: 5px solid hsl(0, 78%, 62%);
 }
 
 .mid-col-bottom-content {
-  border-top: 4px solid hsl(34, 97%, 64%);
+  border-top: 5px solid hsl(34, 97%, 64%);
 }
 
 .right-col-content {
-  border-top: 4px solid hsl(212, 86%, 64%);
+  border-top: 5px solid hsl(212, 86%, 64%);
 }
 
 /*
@@ -112,5 +113,35 @@ main > div {
   width: 30%;
 }
 */
+@media (min-width: 1440px) {
+  main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+    margin-top: 4em;
+    color: red;
+  }
+  main div div {
+    height: 18rem;
+  }
+  header :nth-child(1) {
+    font-size: 40px;
+    font-weight: 200;
+    color: hsl(234, 12%, 34%);
+  }
+  header :nth-child(2) {
+    font-size: 40px;
+    font-weight: 600;
+    color: hsl(234, 12%, 34%);
+  }
+  header p {
+    margin-inline: auto;
+    max-width: 50%;
+    font-size: 18px;
+    text-wrap: wrap;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */

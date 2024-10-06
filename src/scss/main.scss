@@ -29,17 +29,17 @@ header {
   text-align: center;
 }
 
-.wrapper header :nth-child(1) {
+header :nth-child(1) {
   font-weight: 200;
   color: $grayish-blue;
 }
 
-.wrapper header :nth-child(2) {
+header :nth-child(2) {
   font-weight: 600;
   color: $very-dark-blue;
 }
 
-.wrapper header p {
+header p {
   margin-top: 2em;
   text-wrap: balance;
 }
@@ -78,12 +78,6 @@ main {
   }
 }
 
-//.left-col,
-//right-col {
-//  display: flex;
-//  align-items: center;
-//}
-
 .mid-col {
   display: flex;
   flex-direction: column;
@@ -91,6 +85,7 @@ main {
 }
 
 main h4 {
+  font-size: 20px;
   color: $very-dark-blue;
 }
 
@@ -103,19 +98,19 @@ img {
 //border colors
 
 .left-col-content {
-  border-top: 4px solid $cyan;
+  border-top: 5px solid $cyan;
 }
 
 .mid-col-top-content {
-  border-top: 4px solid $red;
+  border-top: 5px solid $red;
 }
 
 .mid-col-bottom-content {
-  border-top: 4px solid $orange;
+  border-top: 5px solid $orange;
 }
 
 .right-col-content {
-  border-top: 4px solid $blue;
+  border-top: 5px solid $blue;
 }
 
 //desktop
@@ -128,3 +123,44 @@ main > div {
   width: 30%;
 }
 */
+
+@media (min-width: 1440px) {
+  main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+    margin-top: 4em;
+    color: red;
+  }
+
+  main {
+    div {
+      div {
+        height: 18rem;
+      }
+    }
+  }
+
+  header :nth-child(1) {
+    font-size: 40px;
+    font-weight: 200;
+    color: $very-dark-blue;
+  }
+
+  header :nth-child(2) {
+    font-size: 40px;
+    font-weight: 600;
+    color: $very-dark-blue;
+  }
+
+  header {
+    p {
+      margin-inline: auto;
+      max-width: 50%;
+      font-size: 18px;
+      text-wrap: wrap;
+    }
+  }
+}
